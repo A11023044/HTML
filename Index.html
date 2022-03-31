@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .header {
+            position: fixed;
+            z-index: 100;
+            margin: 0px auto;
+            background-color: #2D3142;
+            display: flex;
+            font-size: 25px;
+            width: 100%;
+        }
+
+        .header .logo {
+            margin-right: 600px;
+            margin-left: 50px;
+            color: #FFFFE8;
+            padding: 8px 50px;
+            transition: transform 0.5s linear 0s;
+        }
+
+        .header .logo:hover {
+            transform: scale(1.2);
+        }
+
+        :root {
+            scroll-padding-top: 3rem;
+        }
+
+        .bar {
+            display: inline-flex;
+        }
+
+        .bar a {
+            text-decoration: none;
+            color: #FFFFE8;
+            padding: 6px 50px;
+            text-align: center;
+            transition: transform 0.5s linear 0s;
+        }
+
+
+        .bar a:hover {
+            background-color: #8B95C9;
+            transform: scale(1.2);
+        }
+
+        .introduction {
+            padding: 100px 300px;
+            display: flex;
+        }
+
+        .image {
+            width: 350px;
+            border-radius: 50%;
+        }
+
+        .table {
+            border-collapse: collapse;
+            width: 1050px;
+            word-wrap: break-word;
+            table-layout: fixed;
+            font-weight: bold;
+            font-size: 20px;
+            border: 3px #d3d3d3 solid
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px dashed #a2a9b6;
+        }
+
+        .Interest {
+            padding: 0px 100px;
+
+        }
+
+        .motoimage {
+            width: 700px;
+            height: 400px;
+        }
+
+        .motoimage:hover {
+            transition: transform 0.5s linear 0s;
+            transform: scale(1.2);
+        }
+
+        .motoimage2 {
+            width: 600px;
+            height: 450px;
+        }
+
+        .motoimage2:hover {
+            transition: transform 0.5s linear 0s;
+            transform: scale(1.2);
+        }
+
+        .guessing {
+            display: block;
+            padding: 0px auto 20px;
+        }
+    </style>
+    <script>
+        function Ans() {
+            alert("籃球");
+        }
+    </script>
+</head>
+<title>自我介紹</title>
+
+<body>
+    <div class="header">
+        <a class="logo">網站前端設計與開發</a>
+        <nav class="bar">
+            <a href="#introduction">簡歷</a>
+            <a href="#Interest">興趣</a>
+            <a href="#guessing">猜燈謎</a>
+        </nav>
+    </div>
+    <div id="introduction" class="introduction">
+        <table class="table">
+            <tr>
+                <td rowspan="5" style="background-color:#9FB7B9 ;padding: 20px 25px 20px;width: 350px;"><img
+                        class="image" src="IMG_44051.JPG">
+                </td>
+                <td style="padding-left: 30px ;">姓名:柯唯廉</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 30px ;">學號:A11023044</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 30px ;">信箱:A11023044@gemail.yuntech.edu.tw</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 30px ;">學校:雲林科技大學</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 30px ;">科系:資訊管理科</td>
+            </tr>
+        </table>
+    </div>
+    <hr>
+    <div id="Interest" class="Interest">
+        <a
+            style="display: flex;justify-content: center;font-size: 50px;font-weight: bold;padding: 20px 0px 20px;">興趣:騎車</a><br>
+        <a
+            style="display: flex;justify-content: center;font-size: 20px;font-weight: bold;padding: 20px 0px 20px;">⬇現役的車輛⬇</a>
+        <table style="padding-bottom: 100px;">
+            <tr>
+                <td style="text-align: center;width: 700px;font-size: 70px;font-weight: bold;">CBR500R</td>
+                <td rowspan="5" style="padding: 20px 25px 20px;width: 700px; height: 400px; position:relative;top:70px">
+                    <img class="motoimage" src="IMG_2503.JPG">
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-left: 40px ;">排氣量:471CC</td>
+
+            </tr>
+            <tr>
+                <td style="padding-left: 40px ;">最大馬力:50hp</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 40px ;">引擎型式:水冷並列雙汽缸</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 40px ;">車重:193kg</td>
+            </tr>
+        </table>
+
+        <a
+            style="display: flex;justify-content: center;font-size: 20px;font-weight: bold;padding: 20px 0px 20px;">⬇夢想的車輛⬇</a>
+        <table style="padding-bottom: 100px;">
+            <tr>
+                <td rowspan="5" style="padding: 20px 25px 20px;width: 700px; height: 400px; position:relative;top:70px">
+                    <img class="motoimage2" src="test2.JPG">
+                </td>
+                <td style="text-align: center;width: 700px;font-size: 70px;font-weight: bold;">CBR600RR</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 40px ;">排氣量:599CC</td>
+
+            </tr>
+            <tr>
+                <td style="padding-left: 40px ;">最大馬力:120hp</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 40px ;">引擎型式:水冷直列四缸</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 40px ;">車重:194kg</td>
+            </tr>
+        </table>
+    </div>
+    <hr id="guessing">
+    <a style="display: flex;justify-content: center;font-size: 50px;font-weight: bold;padding: 20px 0px 20px;">猜燈謎</a>
+    <center>
+        <div class="guessing">
+            <a style="font-size: 20px;font-weight: bold;">沒到手想搶到手，搶到手卻扔出手。(猜運動)</a><br />
+            <input type="button" onclick="Ans()" value="答案" style="font-size: 20px;font-weight: bold;">
+        </div>
+    </center>
+    <div style="padding: 20px 0 20px;"></div>
+</body>
+
+</html>
